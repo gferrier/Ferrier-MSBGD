@@ -1,0 +1,389 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 6.0.3.2 (Linux)"/>
+	<meta name="created" content="2018-11-17T16:04:50.904424341"/>
+	<meta name="changed" content="2018-11-20T07:35:30.415507546"/>
+	<style type="text/css">
+		@page { margin: 2cm }
+		p { margin-bottom: 0.25cm; line-height: 115% }
+		h1 { margin-bottom: 0.21cm }
+		h1.western { font-family: "Liberation Serif", serif }
+		h1.cjk { font-family: "Noto Sans CJK SC Regular"; font-size: 24pt }
+		h1.ctl { font-family: "Lohit Devanagari"; font-size: 24pt }
+		pre.cjk { font-family: "Courier New", monospace }
+		h2.western { font-family: "Liberation Sans", sans-serif; font-size: 16pt }
+		h2.cjk { font-family: "Noto Sans CJK SC Regular"; font-size: 16pt }
+		h2.ctl { font-family: "Lohit Devanagari"; font-size: 16pt }
+		a:link { so-language: zxx }
+	</style>
+</head>
+<body lang="fr-FR" dir="ltr">
+<h1 class="western" align="center">SD701	Cover Type Prediction of
+Forests</h1>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%">Story
+of my failure.</p>
+<p align="center" style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<table width="100%" cellpadding="4" cellspacing="0">
+	<col width="64*">
+	<col width="64*">
+	<col width="128*">
+	<tr valign="top">
+		<td width="25%" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0.1cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p>Kaggle User ID 
+			</p>
+		</td>
+		<td width="25%" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0.1cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p>UserName&nbsp;: 
+			</p>
+		</td>
+		<td width="50%" style="border: 1px solid #000000; padding: 0.1cm">
+			<p>Display name</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="25%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p>2431401</p>
+		</td>
+		<td width="25%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p>gferrier</p>
+		</td>
+		<td width="50%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
+			<p>Guillaume Ferrier</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="25%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p>Position&nbsp;: 63/64</p>
+		</td>
+		<td width="25%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p><br/>
+
+			</p>
+		</td>
+		<td width="50%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
+			<p>Score&nbsp;: 0.8603351d 
+			</p>
+		</td>
+	</tr>
+</table>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<h1 class="western">Algorithm</h1>
+<p style="margin-bottom: 0cm; line-height: 100%">The very first
+question was what kind of algorithm to use&nbsp;(other than Logistic
+Regression):</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%">I had currently no
+real knowledge on what to use, if I only considered what I knew so
+far, there will only be linear regression but in that case it is
+almost certain it would have poor results.</p>
+<p style="margin-bottom: 0cm; line-height: 100%">A few days before
+there was a brief course presenting the neural networks and it seemed
+promising so that was the very thing I «&nbsp;tried&nbsp;» during
+the original session.</p>
+<pre class="western">
+<font face="FreeMono, monospace">MultilayerPerceptronClassifier</font></pre><p style="margin-bottom: 0cm; line-height: 100%">
+<br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%">After more than an
+hour trying to have it simply not raise an error about dimensions I
+quit.</p>
+<p style="margin-bottom: 0cm; line-height: 100%">Recent talks with
+another student who succeeded using them helped me identify what I
+was probably doing wrong&nbsp;: the last layer size should be able to
+store the value of the variable to predict while starting at 0, hence
+a dataset with cover in [1-7] should have the last layer of size 8
+(with the 0 node not usefull) (or 7 if you update the data so that
+values are within 0..6)</p>
+<p style="margin-bottom: 0cm; line-height: 100%">Considering the
+possible difficulties to find a suitable layers setup this was
+probably a good idea for me to give up on such method for this
+exercice.</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><font face="FreeMono, monospace">RandomForestClassifier<br/>
+</font><br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%">This is what seemed
+trendy/popular both because of the simplicity and the results on
+competions (but that opinion seems now a little outdated). And just
+for the fun of the name, what’s better than a forest to predict a
+forest&nbsp;?</p>
+<p style="margin-bottom: 0cm; line-height: 100%">That’s what I
+tried because I had the feeling this was a sure way to have a decent
+score, I’m not here for the competition.</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%">What I should have
+tried&nbsp;:</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%">I still have the
+impression than being able to extract a rule is very usefull for the
+(business)knowledge it can provide and that’s the power of decision
+trees, but here the aim was not to find a botanical understanding but
+have a score.</p>
+<p style="margin-bottom: 0cm; line-height: 100%">K-NextNeighbours
+even if it may be the most greedy to make predictions is probably
+what should fit best such data, at least it fits the naive impression
+we have from geography classes and probably works fine on problems
+that have variables with limited range values and well distributed.
+In other words KNN might be what’s best left when there seems to be
+no simple separation.</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%">Updates on
+performaces/popularity&nbsp;:</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%">The new trends seems
+to be Gradiant boosting methods. Should I try it&nbsp;: maybe
+GBTClassifier next time, but more popular gradiant boosting that are
+not part of the spark mllib yet&nbsp;: probably not. When I’ll be
+confident enough with the tools I use I may go further, it is still
+too early for that.</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<h1 class="western">Hyper parameters</h1>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%">Once you’re set
+with the algorithm, there are the hyper parameters. 
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%">And there started
+the troubles.</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%">The general idea is
+to try a set of values and simply find which works best, hoping that
+there is somehow a peak in performances around a given value.</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%">The tool for this,
+is the principle of grid search, you define the list of values to try
+for all elements of the pipeline, and you train as much times as the
+combination defined.</p>
+<p style="margin-bottom: 0cm; line-height: 100%">But here I face
+severe issues with the platform Databricks itself.</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><font face="FreeMono, monospace">(24)
+Spark Jobs <br/>
+The spark driver has stopped unexpectedly and is
+restarting. Your notebook will be automatically reattached. <br/>
+</font><br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%">Was is it the bad
+day&nbsp;? Was I assigned a troubled cluster server, I don’t know
+but it just resulted in a real demotivation to go further.</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%">With a technical
+impossibility to test reallistic grid, I had to choose what I could
+test.</p>
+<p style="margin-bottom: 0cm; line-height: 100%">And when I had not
+the «&nbsp;driver&nbsp;» issue I was having the following error&nbsp;:</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><font face="FreeMono, monospace">(27)
+Spark Jobs <br/>
+org.apache.spark.SparkException: Job aborted due to
+stage failure: Task 7 in stage 55.0 failed 1 times, most recent
+failure: <br/>
+Lost task 7.0 in stage 55.0 (TID 412, localhost,
+executor driver): java.lang.OutOfMemoryError: GC overhead limit
+exceeded</font></p>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+So most of the
+tuning process was, «&nbsp;what can I do that will not crash&nbsp;».
+With limited grid power I tried «&nbsp;simple&nbsp;» lists, with
+the painfull need to reevaluate all previous cells or recreate a
+cluster after every attempt that failed due to a cluster failure.</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><font face="FreeMono, monospace">-
+numTrees&nbsp;:</font></p>
+<p style="margin-bottom: 0cm; line-height: 100%">The number of trees
+seems to help performances directly.</p>
+<p style="margin-bottom: 0cm; line-height: 100%">I’m pretty sure
+there is a limit where you don’t really gain anymore but I couldn’t
+even approach such limit. So I just took a  small number (5) to try
+to see the impact of other variables in grid searches.</p>
+<p style="margin-bottom: 0cm; line-height: 100%">For final model I
+raised the number to 29, just becauses it didn’t crashed while 40
+or 50 crashed. But I’m pretty sure 29 is ridiculously low.</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><font face="FreeMono, monospace">-
+maxDepth&nbsp;:</font></p>
+<p style="margin-bottom: 0cm; line-height: 100%">I had the thougth
+that there can be a peak for this element&nbsp;: too complex model
+will not necessarily be better on data outside the training, and here
+with a limited number of folds I was expecting to see an inflection
+but there were not, so the limit was set yet again not because of a
+score but because of limitation (here of the library itselves that
+does not allow to go over 30) I’m still not confident setting such
+a high depth was a good idea but that was what the few runs that went
+up to their end seemed to tell.</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><font face="FreeMono, monospace">-
+minInstancesPerNode&nbsp;:</font></p>
+<p style="margin-bottom: 0cm; line-height: 100%">currently this seems
+totally random and with severall grid runs is was never the same
+best. So almost anything between 4 and 9 seemed fine&nbsp;: the first
+attemps had a tendency to 7-9 and the latest attemps more with 4-5
+without any clear comprehension from my part.</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><font face="FreeMono, monospace">-
+maxBins&nbsp;:</font></p>
+<p style="margin-bottom: 0cm; line-height: 100%">There should have a
+peak phenomenon for this one, but again it was much more a pass/crash
+tryout than a real scoring evaluation, and I stopped at 45 that
+seemed enough. I should probably have tested again highest values but
+I believe an old test excluded 50 and 60 compared to 40 probably …
+it’s difficult to keep correct tracks when you don’t know what
+you are looking for and at the time i was more focusing on
+minInstancesPerNode …</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<h2 class="western">Folding System&nbsp;:</h2>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%">With not that many
+data for some classes, having too many folds to  evaluate the
+training set performances may result in varying scores, and for sure
+it needs more computation power so I kept it low with the platform
+issues I experienced. Should I have taken higher folding system&nbsp;:
+for a more reliable score sure, for a safe run unfortunately not.</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<h2 class="western">Best Model vs best parameters.</h2>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%">When you run a grid
+search you can use the best model identified, but this model is
+based/trained on a fold.  
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%">So I had to chose
+between to direclty transform the test set on the best model or
+«&nbsp;clone&nbsp;» the model by extracting some parameters and
+retrain again. 
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%">Since I was in need
+for adding more trees I chose not to keep the best model of the grid
+but just manually copy the hyper parameter and re-train on the whole
+train set and with more trees. The fact that it was very difficult
+just to have a result for a grid execution also influenced my
+choice&nbsp;: it was not a good idea to rely on rerunning a grid
+every time I need to change something. So I chose the less effective
+way but most safe way to have at least a result.</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<h1 class="western">Input data transformation.</h1>
+<p style="margin-bottom: 0cm; line-height: 100%">The key for better
+results may be in cleaning the data but this is probably the most
+time consuming and the most uncertain research.</p>
+<p style="margin-bottom: 0cm; line-height: 100%">I tried a simple
+approach simply based on the fact that all classes did not have as
+many samples. Classes with less samples were never predicticted so
+maybe there was space for improvement.</p>
+<p style="margin-bottom: 0cm; line-height: 100%">If I simply sampled
+according to the lowest class cardinal, there would only be 2k
+samples for each which is probably too few, so I just tried to
+sub-sample the over-represented categories. I’m still convinced
+this a a valid approach for algorithms like neural networks, but here
+there was a big drawback on results on the test score. The previous
+score was 0.85904 and it dropped to 0.72510, still better than the
+initial logistic regeression but still a huge loss.<br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%">Maybe I was better
+for cover type 5 or 6 but I was less effective on 1 and 2 and the
+test set probably have lots of 1 and 2 …</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%">The sampling I did
+was also the simpliest one&nbsp;: random sample just to fit a desired
+quantity of training elements, maybe there would be a need for
+severall tries, maybe there is a need for a sample that somehow keeps
+the same distribution on the variables, there are probably some tools
+to do so but I didn’t want to investigate further since the first
+attempt had such a poor result.</p>
+<p style="margin-bottom: 0cm; line-height: 100%">For the same reason
+I thought trying to identify outliers would probably not result on an
+improvement. The only idea I had to remove outliers whould be to
+exclude elements based on a quantile but if I do it blindly on every
+feature there will remain too few elements and the performances will
+drop again.</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%">The latest failure
+was the one for handling weird form of data. If you consider angles
+for instance, you’d expect values between 0 and 360 but there were
+some negative values, is it better to skip them or to add 360 or
+reaffect them the average value, none of this is guaranteed to
+improve, and I couldn’t afford testing all of this so I simply did
+nothing.</p>
+<p style="margin-bottom: 0cm; line-height: 100%">Some people had the
+idea to consider reducing dimension, especially for the soil types,
+of course this should help having faster computation, but dropping
+information will less likely improve the score. With too few
+guarantees I chose not to try reducing dimensions. 
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+</body>
+</html>
